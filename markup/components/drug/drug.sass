@@ -1,0 +1,47 @@
+
+.drug
+	margin-left: -20px
+	display: flex
+	flex-wrap: wrap
+	&__item
+		position: relative
+		width: calc(33% - 20px)
+		// min-width: 240px
+		margin-left: 20px
+		margin-bottom: 20px
+		border: 1px solid #7882B6
+		border-top: 6px solid #7882B6
+		background-color: #FFF
+		+r(900)
+			width: calc(50% - 20px)
+		+r(540)
+			width: calc(100% - 20px)
+	&__content
+		position: relative
+		display: block
+		height: 217px
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		align-items: flex-start
+		vertical-align: top
+		padding: 26px 36px 31px
+		overflow: hidden
+		z-index: 5
+
+	&__pic
+	&__title
+		margin: 0
+		margin-top: auto
+		font-size: 30px
+		color: #333
+		+ll
+	&__mask
+		+coverdiv
+		z-index: 1
+	.mask-01
+		background: url('../img/minified-svg/mask-01.svg') 0% 0% no-repeat
+		background-size: 100% 100%
+	.mask-02
+		background: url('../img/general/mask-03.png') 0% 0% no-repeat
+		background-size: 100% 100%

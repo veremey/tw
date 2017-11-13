@@ -1,0 +1,44 @@
+
+.ambulance
+	display: flex
+	justify-content: space-between
+	margin-left: -25px
+	margin-bottom: 100px
+	flex-wrap: wrap
+	+r(670)
+		margin-bottom: 30px
+	&__item
+		width: calc(50% - 25px)
+		margin-left: 25px
+		background-color: #A48CBD
+		+tr(.4s)
+		&:hover
+			opacity: .8
+		+r(670)
+			width: 100%
+			margin-bottom: 20px
+	&__pic
+		position: relative
+		height: 305px
+		overflow: hidden
+	&__img
+		+vcenter
+		min-width: 100%
+		min-height: 100%
+	&__mask
+		+coverdiv
+		opacity: .3
+		background: url('../img/minified-svg/mask.svg') 0% 0% no-repeat
+		background-size: 100% 100%
+	&__footer
+		padding: 20px 27px
+		// background-color: #A48CBD
+	&__title
+		font-size: 27px
+		color: #fff
+		margin-bottom: 5px
+		+ll
+	&__desc
+		color: #fff
+		font-size: 15px
+		+ll

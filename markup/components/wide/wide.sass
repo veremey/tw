@@ -1,0 +1,68 @@
+.wide
+	display: flex
+	align-items: center
+	justify-content: space-between
+	// flex-wrap: wrap
+	padding: 23px 0 40px 34px
+	background-color: #A48CBD
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.02)
+	margin-bottom: 25px
+	+r(800)
+		flex-wrap: wrap
+	+r(540)
+		padding-left: 20px
+	&__text
+		max-width: 380px
+		min-width: 240px
+		+r(800)
+			margin-bottom: 20px
+			min-width: 1px
+	&__title
+		font-size: 40px
+		margin-bottom: 10px
+		color: #fff
+		+ll
+	&__desc
+		font-size: 16px
+		color: #fff
+		+lr
+	&__info
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: flex-end
+		padding-left: 20px
+		flex: 1 1 660px
+		+r(800)
+			padding-left: 0
+
+.event
+	display: flex
+	align-items: center
+	width: 50%
+	min-width: 240px // del?
+	margin: 10px 0
+	padding-right: 10px
+	color: #fff
+	+r(1150)
+		width: 90%
+	+r(800)
+		width: 50%
+	+r(670)
+		width: 100%
+	&__pic
+		display: flex
+		align-items: center
+		justify-content: center
+		min-width: 78px
+		height: 78px
+		border: 1px solid #fff
+		border-radius: 78px
+		text-align: center
+		font-size: 0
+		margin-right: 16px
+	.icon
+		vertical-align:center
+		width: 44px
+		height: 44px
+		fill: #fff
